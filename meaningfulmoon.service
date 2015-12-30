@@ -1,0 +1,9 @@
+[Unit]
+Description=Meaningful Moon Cloud9 IDE Service
+
+[Service]
+ExecStart=su --login emory node "cd workspace && /opt/c9sdk/server.js && true"
+
+
+[Install]
+WantedBy=multi-user.target
